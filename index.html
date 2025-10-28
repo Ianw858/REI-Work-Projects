@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Smartwool — Trainer Reference (REI) • Online Edition</title>
+<style>
+  :root{
+    --brand:#0b6b50; /* REI-like green */
+    --brand-2:#0f8a66;
+    --ink:#1f2937;
+    --muted:#4b5563;
+    --bg:#f8faf9;
+    --card:#ffffff;
+    --accent:#eef7f3;
+    --danger:#b91c1c;
+    --ok:#166534;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.5}
+  a{color:var(--brand);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{display:grid;grid-template-columns:280px 1fr;gap:24px;max-width:1200px;margin:0 auto;padding:24px}
+  header.hero{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;padding:28px 24px;border-bottom:4px solid #0a5842}
+  header .wrap{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:18px}
+  .logo{width:40px;height:40px;border-radius:8px;background:#fff;display:grid;place-items:center;color:var(--brand)}
+  .title h1{margin:0;font-size:1.6rem;letter-spacing:.3px}
+  .title p{margin:4px 0 0 0;opacity:.9}
+  nav.toc{position:sticky;top:18px;align-self:start;background:var(--card);border:1px solid #e5e7eb;border-radius:12px;padding:16px}
+  nav.toc h3{margin:0 0 8px 0;font-size:0.95rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+  nav.toc a{display:block;padding:8px 10px;border-radius:8px;margin:4px 0;color:var(--ink);border:1px solid transparent}
+  nav.toc a:hover{background:var(--accent);border-color:#d7eee5}
+  main{display:grid;gap:18px}
+  section.card{background:var(--card);border:1px solid #e5e7eb;border-radius:16px;padding:18px 20px}
+  section.card h2{margin:0 0 10px 0;font-size:1.25rem;display:flex;align-items:center;gap:10px}
+  .kicker{display:inline-block;background:var(--accent);color:var(--brand);font-weight:600;border-radius:999px;padding:3px 10px;margin:0 0 12px 0;font-size:0.86rem;letter-spacing:.02em}
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .note{color:var(--muted);font-size:0.95rem}
+  ul{margin:0 0 0 20px;padding:0}
+  li{margin:6px 0}
+  .badge{display:inline-block;background:#eef2ff;color:#3730a3;border-radius:999px;padding:2px 8px;font-size:0.78rem;margin-left:6px}
+  .callout{background:var(--accent);border:1px dashed #bfe5d5;border-radius:12px;padding:12px 14px}
+  .hr{height:1px;background:#e5e7eb;margin:14px 0}
+  footer{max-width:1200px;margin:16px auto 40px auto;padding:0 24px;color:var(--muted);font-size:0.92rem;display:flex;justify-content:space-between;gap:8px}
+  @media (max-width: 960px){
+    .container{grid-template-columns:1fr}
+    nav.toc{position:relative}
+    .grid-2,.grid-3{grid-template-columns:1fr}
+  }
+  /* Dark-mode support */
+  @media (prefers-color-scheme: dark){
+    :root{--bg:#0b0f0e;--card:#121715;--ink:#e5e7eb;--muted:#9ca3af;--accent:#0f2a24;--brand-2:#129a74}
+    header.hero{border-bottom-color:#063a2d}
+    nav.toc,section.card{border-color:#27332f}
+    .hr{background:#27332f}
+  }
+  .icon{width:18px;height:18px;display:inline-block;vertical-align:middle}
+</style>
+
+<style id="teams-print-css-1080p">
+@media print {
+  @page { size: 1920px 1080px; margin: 0; }
+  html, body { width: 1920px; height: auto; margin: 0; padding: 0; }
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  nav, .nav, .navbar, header .nav, .breadcrumbs, .breadcrumb, .toc, .skip-link,
+  .screen-only, .footer, footer { display: none !important; }
+  section, .card, .callout, .grid, .grid-2, .grid-two, .panel {
+    break-inside: avoid; page-break-inside: avoid;
+  }
+  section { break-after: page; page-break-after: always; }
+  .container, .wrap, main, .page { width: 1920px !important; max-width: 1920px !important; margin: 0 auto !important; }
+  a[href]:after { content: "" !important; }
+}
+</style>
+
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="logo" aria-hidden="true">
+      <!-- simple mountain svg -->
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M3 19h18L14 6l-3 5-2-3L3 19z" stroke="#0b6b50" stroke-width="1.5" fill="#d6f4ea"/>
+      </svg>
+    </div>
+    <div class="title">
+      <h1>Smartwool — Trainer Reference (REI) <span class="badge">Online Edition</span></h1>
+      <p>v2.1 (Error-Checked) • Sections 1–6 • Screen-optimized (responsive)</p>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="toc" aria-label="On-page navigation">
+    <h3>Contents</h3>
+    <a href="#merino">1) Merino Wool</a>
+    <a href="#socks">2) Socks</a>
+    <a href="#base">3) Base Layers</a>
+    <a href="#midouter">4) Midlayer & Outerwear Cross‑overs</a>
+    <a href="#acc">5) Accessories</a>
+    <a href="#sustain">6) Sustainability & Care</a>
+  </nav>
+
+  <main>
+    <section id="merino" class="card">
+      <div class="kicker">Merino story first</div>
+      <h2>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 16l4-8 4 6 4-4 4 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        1) Merino Wool — Nature’s Performance Fiber
+      </h2>
+      <div class="callout"><strong>10‑second talk track:</strong> Merino helps manage your micro‑climate: warm when it’s cool, cool when it’s hot, and comfortable whether you’re moving or resting.</div>
+      <div class="hr"></div>
+      <div class="grid-2">
+        <div>
+          <h3>Fiber science (plain language)</h3>
+          <ul>
+            <li><strong>Ultra‑fine fibers (~17–19 microns):</strong> bend without poking skin → soft next‑to‑skin feel.</li>
+            <li><strong>Natural crimp:</strong> tiny waves trap air → light insulation and help move moisture vapor outward.</li>
+            <li><strong>Moisture‑first:</strong> absorbs vapor before sweat beads up, then releases it gradually (<em>heat of sorption</em>) → steady comfort.</li>
+            <li><strong>Odor management:</strong> keratin in the fiber binds odor molecules → more wears between washes.</li>
+            <li><strong>Protection:</strong> offers some natural UV resistance (UPF varies by fabric weight/color) and is naturally flame resistant/self‑extinguishing (won’t melt or drip like many synthetics).</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Merino vs. others</h3>
+          <ul>
+            <li><strong>Traditional wool:</strong> coarser fibers; warm but heavier and slower to dry.</li>
+            <li><strong>Merino:</strong> finer fibers = soft, breathable, better micro‑climate control; compressible for layering.</li>
+            <li><strong>Cotton:</strong> comfy dry, but holds water and loses warmth when wet → best for casual use.</li>
+          </ul>
+          <p class="note"><strong>Care:</strong> Cold wash, mild detergent, no softener/bleach; dry flat or low tumble. Air out between wears.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="socks" class="card">
+      <div class="kicker">Fit + durability</div>
+      <h2>
+        <svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M8 13l2.5 2.5L16 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        2) Socks — Engineered Comfort
+      </h2>
+      <div class="grid-2">
+        <div>
+          <h3>Core tech (what it does)</h3>
+          <ul>
+            <li><strong>4 Degree™ Elite Fit:</strong> elastic bands at arch/ankle lock fit → less slipping/bunching.</li>
+            <li><strong>Virtually Seamless™ Toe:</strong> low‑profile closure → less toe rub.</li>
+            <li><strong>Indestructawool™:</strong> reinforced heel/toe zones → longer wear without scratchiness.</li>
+            <li><strong>Shred Shield™:</strong> toe box protection → resists toenail abrasion.</li>
+            <li><strong>Targeted Cushion + Mesh Vents:</strong> cushion where needed; vents dump heat → comfort without bulk.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Fit & quick picks</h3>
+          <ul>
+            <li><strong>Cushion:</strong> Ultralight (run) • Light (day hike) • Medium (backpacking) • Targeted ski (snow).</li>
+            <li><strong>Height:</strong> Ankle = agility • <strong>Crew = hiking default</strong> • OTC = snow/boot interface.</li>
+            <li><strong>Fit fixes:</strong> Heels blistering → check heel lock & shoe heel pocket; try lighter cushion + vents. Toe wear → confirm Shred Shield™, trim nails, ensure toe box room.</li>
+          </ul>
+          <p class="note"><em>Analogies:</em> Indestructawool™ = re‑bar in concrete; Mesh vents = jacket pit‑zips for your feet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="base" class="card">
+      <div class="kicker">Choose by output & climate</div>
+      <h2>
+        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M4 18h16M4 12h16M4 6h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        3) Base Layers — Merino + Construction
+      </h2>
+      <div class="grid-2">
+        <div>
+          <h3>Line overview</h3>
+          <ul>
+            <li><strong>Merino 150 — Core‑spun:</strong> fine Merino fibers around a durable nylon filament; lightest, most breathable; durable. <em>Use:</em> high output, shoulder seasons, travel.</li>
+            <li><strong>Merino 250 — 100% Merino:</strong> interlock knit; warmer mid‑weight that still breathes. <em>Use:</em> cold weather, low‑to‑moderate output.</li>
+            <li><strong>Intraknit™ — 3D body‑mapped:</strong> adaptive; vent where hot, insulate where cool. <em>Use:</em> multi‑sport, variable effort.</li>
+            <li><strong>Active Ultralite — Merino + TENCEL™ Lyocell:</strong> featherweight, cool‑touch, fast dry. <em>Use:</em> heat/high output, sunny travel.</li>
+            <li><strong>Merino Sport — Merino + recycled polyester:</strong> Merino feel with quicker dry. <em>Use:</em> running, biking, humid conditions.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Fit checklist</h3>
+          <ul>
+            <li>Next‑to‑skin for best moisture transfer.</li>
+            <li>Confirm shoulder/sleeve mobility (tops) and waist/seat (bottoms).</li>
+            <li>If between sizes, most guests prefer the truer/smaller size for performance.</li>
+          </ul>
+          <p class="note"><em>Analogy:</em> Intraknit™ is a fabric “map” — like shoes with breathable panels and supportive zones in one knit.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="midouter" class="card">
+      <div class="kicker">Layer like a pro</div>
+      <h2>
+        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 7-7 7-7-7 7-7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        4) Midlayer & Outerwear Cross‑overs (Pairing with Smartwool)
+      </h2>
+      <div class="grid-2">
+        <div>
+          <ul>
+            <li><strong>Smartloft™ Insulation:</strong> recycled Merino insulation; warm if damp; breathes better than many fills.</li>
+            <li><strong>Hybrid designs:</strong> insulated front/back + stretch sides/sleeves → warmth where needed, flex where you move.</li>
+            <li><strong>DWR vs. waterproof:</strong> DWR sheds light precip; for steady rain, add a waterproof breathable shell (e.g., GORE‑TEX®).</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <strong>Layering shortcut:</strong> Merino base → Smartloft™ mid → waterproof shell = classic 3‑layer system for variable mountain weather.
+        </div>
+      </div>
+    </section>
+
+    <section id="acc" class="card">
+      <div class="kicker">Head • Neck • Hands</div>
+      <h2>
+        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        5) Accessories
+      </h2>
+      <div class="grid-2">
+        <div>
+          <ul>
+            <li><strong>Beanies/Neck Gaiters:</strong> Merino warms when damp and resists odor — great under helmets or in stop‑and‑go cold.</li>
+            <li><strong>Liner Gloves:</strong> Merino next‑to‑skin manages sweat; add a shell mitten/glove for wind/snow.</li>
+          </ul>
+        </div>
+        <div>
+          <p class="note"><strong>Sun tip:</strong> Some Merino tops/hats carry UPF ratings; always check the tag.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sustain" class="card">
+      <div class="kicker">Care & impact</div>
+      <h2>
+        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 2v6M12 16v6M2 12h6M16 12h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        6) Sustainability & Care
+      </h2>
+      <div class="grid-2">
+        <div>
+          <ul>
+            <li><strong>ZQ‑Certified Merino & Supply‑Chain Traceability:</strong> animal welfare, land stewardship, and transparency from sheep to shelf.</li>
+            <li><strong>Second Cut™ (Sock Take‑Back):</strong> mail‑in program for used socks (any brand/material) → recycled into new goods where possible.</li>
+            <li><strong>Knit‑to‑shape efficiency:</strong> Intraknit™ can reduce fabric waste vs. traditional cut‑and‑sew.</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <strong>Care mantra:</strong> Wash less, air more. Cold wash, mild detergent, no softeners, dry flat/low.
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <div>© For REI training use • Smartwool trademarks used nominatively.</div>
+  <div>Screen‑optimized layout • v2.1</div>
+</footer>
+</body>
+</html>
